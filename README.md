@@ -27,7 +27,7 @@ This project contains a C program that processes 3D models stored in the OBJ for
 
 ## Requirements
 
-- A C compiler (GCC is recommended)
+- C compiler (GCC is recommended)
 - Standard C libraries
 
 ## Compilation
@@ -45,8 +45,21 @@ make
 ```
 
 ## Usage
+
 After compiling, run the executable with the input OBJ file and the desired output file name as arguments:
 
 ```bash
 ./projet input.obj output.obj
 ```
+
+## Example of Analysis
+
+### Before Processing
+
+![Before Processing](img/original.png)
+
+### After
+
+![After Processing](img/processed.png)
+
+Blender has issues when handling colors. :(
