@@ -1,4 +1,4 @@
-# 3D Model Processor
+# 3D Mesh Analyzer
 
 This project contains a C program that processes 3D models stored in the OBJ format. The program reads an input OBJ file, computes the centroids of each face, extracts and detects equivalent edges using several methods (including an AVL tree-based approach), and then applies a breadth-first search (BFS) on the dual graph to color the model based on distance from a selected face.
 
@@ -35,12 +35,18 @@ This project contains a C program that processes 3D models stored in the OBJ for
 To compile the program, run:
 
 ```bash
-gcc -o model_processor main.c
+gcc -o projet projet.c
+```
+
+or
+
+```bash
+make
 ```
 
 ## Usage
 After compiling, run the executable with the input OBJ file and the desired output file name as arguments:
 
 ```bash
-./model_processor input.obj output.obj
+./projet input.obj output.obj
 ```
